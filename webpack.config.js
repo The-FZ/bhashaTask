@@ -22,6 +22,14 @@ module.exports = {
   resolve:{
     alias:{
       Main:path.resolve(__dirname,'./app/components/Main.js'),
+      BhashaMain:path.resolve(__dirname,'./app/components/BhashaMain/BhashaMain.js'),
+      PickWords:path.resolve(__dirname,'./app/components/PickWords/PickWords.js'),
+      Statement:path.resolve(__dirname,'./app/components/Statement/Statement.js'),
+      AnswerGrid:path.resolve(__dirname,'./app/components/AnswerGrid/AnswerGrid.js'),
+      Answer:path.resolve(__dirname,'./app/components/Answer/Answer.js'),
+      OptionsGrid:path.resolve(__dirname,'./app/components/OptionsGrid/OptionsGrid.js'),
+      CorrectOrIncorrect:path.resolve(__dirname,'./app/components/CorrectOrIncorrect/CorrectOrIncorrect.js'),
+      Option:path.resolve(__dirname,'./app/components/Option/Option.js'),
       applicationStyles:path.resolve(__dirname,'./app/styles/app.scss')
     },
     extensions:[' ', '.js', '.jsx', '.css', '.scss']

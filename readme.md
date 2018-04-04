@@ -1,1 +1,1 @@
-React Timer application.
+Check correct or incorrect.

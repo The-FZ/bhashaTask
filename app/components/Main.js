@@ -1,8 +1,9 @@
 var React = require('react');
+import BhashaMain from 'BhashaMain';
 
-var Main=(props)=>{
+var Main = ( props ) => {
   return (
-      <h1>Hello in the main component of React </h1>
+      <BhashaMain />
   );
 };
 
