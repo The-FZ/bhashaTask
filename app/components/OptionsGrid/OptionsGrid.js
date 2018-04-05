@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import Option from 'Option';
 import CorrectOrIncorrect from 'CorrectOrIncorrect';
 
-var OptionsGrid = ( { options,onClickHandler, correct, answerLength, optionsLength } ) => {
+var OptionsGrid = ( { options,onClickHandler, correct, answerLength } ) => {
 
   var renderOptionsOrCorrectIncorrect = () => {
-    if(answerLength < optionsLength){
+    if(answerLength < options.length){
       return options.map((option,index) => {
         return <Option option ={option} key={index} onClickOption = {onClickHandler}/>
       })

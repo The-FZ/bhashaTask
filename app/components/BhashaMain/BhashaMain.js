@@ -51,7 +51,7 @@ export default class BhashaMain extends Component{
         <PickWords/>
         <Statement statement={statement} />
         <AnswerGrid answers={this.state.answers}/>
-        <OptionsGrid options={options} onClickHandler ={this.onClickHandler} correct={correct} answerLength={answers.length} optionsLength={options.length}/>
+        <OptionsGrid options={options} onClickHandler ={this.onClickHandler} correct={correct} answerLength={answers.length} />
       </div>
     );
   }

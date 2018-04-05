@@ -20008,7 +20008,7 @@ var BhashaMain = function (_Component) {
         _react2.default.createElement(_PickWords2.default, null),
         _react2.default.createElement(_Statement2.default, { statement: statement }),
         _react2.default.createElement(_AnswerGrid2.default, { answers: this.state.answers }),
-        _react2.default.createElement(_OptionsGrid2.default, { options: options, onClickHandler: this.onClickHandler, correct: correct, answerLength: answers.length, optionsLength: options.length })
+        _react2.default.createElement(_OptionsGrid2.default, { options: options, onClickHandler: this.onClickHandler, correct: correct, answerLength: answers.length })
       );
     }
   }]);
@@ -20168,12 +20168,11 @@ var OptionsGrid = function OptionsGrid(_ref) {
   var options = _ref.options,
       onClickHandler = _ref.onClickHandler,
       correct = _ref.correct,
-      answerLength = _ref.answerLength,
-      optionsLength = _ref.optionsLength;
+      answerLength = _ref.answerLength;
 
 
   var renderOptionsOrCorrectIncorrect = function renderOptionsOrCorrectIncorrect() {
-    if (answerLength < optionsLength) {
+    if (answerLength < options.length) {
       return options.map(function (option, index) {
         return _react2.default.createElement(_Option2.default, { option: option, key: index, onClickOption: onClickHandler });
       });
