@@ -19989,8 +19989,22 @@ var BhashaMain = function (_Component) {
       var statement = this.state.statement;
 
       var options = statement.split(' ');
+
+      var options2 = [];
+
+      function randomGen() {
+        var a = Math.floor(Math.random() * 3);
+        if (!options2.includes(options[a])) {
+          options2.push(options[a]);
+        }
+
+        if (options2.length !== options.length) {
+          randomGen();
+        }
+      }
+      randomGen();
       this.setState({
-        options: options
+        options: options2
       });
     }
   }, {

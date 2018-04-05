@@ -16,8 +16,22 @@ export default class BhashaMain extends Component{
   componentWillMount(){
     const { statement } = this.state;
     let options = statement.split(' ');
+
+    let options2 = [];
+
+    function randomGen(){
+      let a = Math.floor(Math.random()*3);
+      if(!options2.includes(options[a])){
+        options2.push(options[a]);
+      }
+
+      if(options2.length!==options.length){
+        randomGen();
+      }
+    }
+    randomGen();
     this.setState({
-      options
+      options:options2
     })
   }
 
